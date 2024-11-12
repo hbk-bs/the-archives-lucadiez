@@ -1,85 +1,119 @@
 /* Base CSS von Luca */
 body {
-  font-family: 'Nimbus Mono PS', 'Courier New', monospace; /*Schriftwahl*/
-  font-weight: normal; /* Standard Schriftschnitt*/
-  background-color: #efefef; /* Standard Hintergrundfarbe*/
-  color: #232323; /* Standard Textfarbe*/
+	font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+	/*Schriftwahl*/
+	font-weight: normal;
+	/* Standard Schriftschnitt*/
+	background-color: #efefef;
+	/* Standard Hintergrundfarbe*/
+	color: #232323;
+	/* Standard Textfarbe*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600; /* Schriftschnitt für Überschriften*/
-  margin-bottom: 0.5em; /* Mehr Abstand nach unten bei Überschriften */
-  color: #a0649b; /* Farbe für Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	/* Schriftschnitt für Überschriften*/
+	margin-bottom: 0.5em;
+	/* Mehr Abstand nach unten bei Überschriften */
+	color: #a0649b;
+	/* Farbe für Überschriften */
 }
 
 /* Spezifische Größen für Überschriften – unter 768px */
 h1 {
 	font-size: 1.953rem;
 }
+
 h2 {
 	font-size: 1.563rem;
 }
+
 h3 {
 	font-size: 1.25rem;
 }
+
 h4 {
 	font-size: 1rem;
 }
+
 h5 {
 	font-size: 0.8rem;
 	font-weight: 600;
 }
+
 h6 {
 	font-size: 0.64rem;
 	font-weight: 600;
 }
 
 button {
-  background-color: #fac8dc; /* Farbe vom Button */
-  color: #a0649b; /* Schriftfarbe */
-  border: none; /* Kein Rahmen*/
-  padding: 0.75rem; /* Größe des Buttons */
-  border-radius: 0.5rem; /* Abgerundete Ecken */
-  font-size: 1rem; /* Schriftgröße */
-  cursor: pointer; /* Mauszeiger aussehen*/
-  font-family: 'Nimbus Mono PS', 'Courier New', monospace; /*Schriftwahl*/
-  font-weight: 600; /* Standard Schriftschnitt*/
-  margin: 1rem 0rem 1rem 0rem;
+	background-color: #fac8dc;
+	/* Farbe vom Button */
+	color: #a0649b;
+	/* Schriftfarbe */
+	border: none;
+	/* Kein Rahmen*/
+	padding: 0.75rem;
+	/* Größe des Buttons */
+	border-radius: 0.5rem;
+	/* Abgerundete Ecken */
+	font-size: 1rem;
+	/* Schriftgröße */
+	cursor: pointer;
+	/* Mauszeiger aussehen*/
+	font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+	/*Schriftwahl*/
+	font-weight: 600;
+	/* Standard Schriftschnitt*/
+	margin: 1rem 0rem 1rem 0rem;
 }
 
 /* Invertieren der Farben bei Hover über den Button*/
 button:hover {
-  background-color: #a0649b;
-  color: #fac8dc;
+	background-color: #a0649b;
+	color: #fac8dc;
 }
 
 a {
-  color: #a0649b; /* Farbe von Links */
+	color: #a0649b;
+	/* Farbe von Links */
 }
 
 a:hover {
-  color: #fac8dc; /* Farbe vom Link bei Hover */
+	color: #fac8dc;
+	/* Farbe vom Link bei Hover */
 }
 
 @media (min-width: 768px) {
 	html {
 		font-size: 110%;
 	}
+
 	h1 {
 		font-size: 2.369rem;
 	}
+
 	h2 {
 		font-size: 1.777rem;
 	}
+
 	h3 {
 		font-size: 1.333rem;
 	}
+
 	h4 {
 		font-size: 1rem;
 	}
+
 	h5 {
 		font-size: 0.75rem;
 	}
+
 	h6 {
 		font-size: 0.563rem;
 	}
