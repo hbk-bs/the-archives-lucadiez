@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0; /* Setzt margin, padding und border für alle Elemnte auf 0 */
-  box-sizing: border-box;  /* box-sizing wird auf border-box geändert, damit padding und border in die Gesamtgröße eines Elements mit eingerechnet werden */
+  border: 0;/* 
+Setzt margin, padding und border für alle Elemnte auf 0
+*/
+  box-sizing: border-box; 
+/* box-sizing wird auf border-box geändert, damit padding und border in die Gesamtgröße eines Elements mit eingerechnet werden */
 }
 
 body {

@@ -1,12 +1,19 @@
 /* Base CSS von Luca */
+:root {
+	--main-color: #a0649b;
+	--sec-color: #fac8dc;
+	--black-color: #232323;
+	--white-color: #efefef;
+}
+
 body {
-	font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	/*Schriftwahl*/
-	font-weight: normal;
+	font-weight: 300;
 	/* Standard Schriftschnitt*/
-	background-color: #efefef;
+	background-color: var(--white-color);
 	/* Standard Hintergrundfarbe*/
-	color: #232323;
+	color: var(--black-color);
 	/* Standard Textfarbe*/
 }
 
@@ -16,11 +23,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	font-weight: 500;
 	/* Schriftschnitt für Überschriften*/
 	margin-bottom: 0.5em;
 	/* Mehr Abstand nach unten bei Überschriften */
-	color: #a0649b;
+	color: var(--main-color);
 	/* Farbe für Überschriften */
 }
 
@@ -52,9 +59,9 @@ h6 {
 }
 
 button {
-	background-color: #fac8dc;
+	background-color: var(--sec-color);
 	/* Farbe vom Button */
-	color: #a0649b;
+	color: var(--main-color);
 	/* Schriftfarbe */
 	border: none;
 	/* Kein Rahmen*/
@@ -66,26 +73,26 @@ button {
 	/* Schriftgröße */
 	cursor: pointer;
 	/* Mauszeiger aussehen*/
-	font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	/*Schriftwahl*/
-	font-weight: 600;
+	font-weight: 500;
 	/* Standard Schriftschnitt*/
 	margin: 1rem 0rem 1rem 0rem;
 }
 
 /* Invertieren der Farben bei Hover über den Button*/
 button:hover {
-	background-color: #a0649b;
-	color: #fac8dc;
+	background-color: var(--main-color);
+	color: var(--sec-color);
 }
 
 a {
-	color: #a0649b;
+	color: var(--main-color);
 	/* Farbe von Links */
 }
 
 a:hover {
-	color: #fac8dc;
+	color: var(--sec-color);
 	/* Farbe vom Link bei Hover */
 }
 
@@ -117,3 +124,4 @@ a:hover {
 	h6 {
 		font-size: 0.563rem;
 	}
+}
