@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  background-color: white;
+}
+.logo img {
+  margin-top: 10px;
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  z-index: 1000;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 1em;
+  background: white;
+}
+.nav a:hover{
+  color: var(--main-color);
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.burger:hover{
+  background: var(--main-color);
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: var(--black-color);
+  margin: 5px;
+}
+#menu-toggle {
+  display: none;
+}
+h1{
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+/* Unteseiten */
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;;
+  border: 1px solid var(--black-color);
+  border-radius: 8px;
+  max-width: 400px;
+}
+figure img {
+  width: 100%;
+  display: block;
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+/*footer*/
+.footer{
+  margin: 50px 10px 50px 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+  .nav a {
+      padding: 10px;
+      display: block;
+  }
+  .nav a:hover{
+    background-color: var(--black-color);
+  }
+  .burger {
+      display: flex;
+  }
+  #menu-toggle:checked ~ .nav {
+      display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav a{
+    padding: 0px 5px 0px 5px;
+  }
+
+  /*Unteseiten*/
+  .work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 800px; /* Anpassen der Breite für bessere Darstellung */
+  }
+}

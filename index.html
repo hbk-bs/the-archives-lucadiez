@@ -3,23 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-
-    <title>{the archive}</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>modulportfolio by luca diez aguilar</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/slider.js" defer></script>
   </head>
-  <body>
-    <img
-      src="assets/images/ff6347-icon-512x512.webp"
-      alt="A square icon with rounded corners. Inside is a geometric design featuring a white square frame containing a black and gray diagonal split, with a smaller white square in the center where the diagonal lines meet."
-    />
-    <ul>
-      <li><a href="motion/around/index.html">motion – around</a></li>
-      <li><a href="motion/between/index.html">motion – between</a></li>
-      <li><a href="motion/crosswise/index.html">motion – crosswise</a></li>
-      <li><a href="motion/into/index.html">motion – into</a></li>
-      <li><a href="motion/upward/index.html">motion – upward</a></li>
-    </ul>    
-    <script src="index.js"></script>
-  </body>
+<body>
+    <header class="header">
+        <div class="logo">Modulportfolio</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="nav">
+            <a href="#algorithm">algorithm</a>
+            <a href="#interaction">interaction</a>
+            <a href="#motion">motion</a>
+            <a href="#perspective">perspective</a>
+            <a href="#physical-computing">physical-computing</a>
+        </nav>
+    </header>
+
+    <!-- Bild-Slider -->
+    <section class="slider-container">
+        <div class="slider">
+            <img src="assets/images/algorithm_v1.jpg" class="slide active">
+            <img src="assets/images/algorithm_v2.jpg" class="slide">
+            <img src="assets/images/algorithm_v3.jpg" class="slide">
+            <img src="assets/images/algorithm_v4.jpg" class="slide">
+        </div>
+        <div class="dots-container"></div>
+    </section>
+
+    <script src="assets/js/slider.js"></script>
+</body>
 </html>

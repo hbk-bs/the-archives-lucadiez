@@ -1,7 +1,7 @@
 /* Base CSS von Luca */
 :root {
-	--main-color: #a0649b;
-	--sec-color: #fac8dc;
+	--main-color: #FFC6D9;
+	--sec-color: #FFF7AE;
 	--black-color: #232323;
 	--white-color: #efefef;
 }
@@ -9,7 +9,7 @@
 body {
 	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	/*Schriftwahl*/
-	font-weight: 300;
+	font-weight: normal;
 	/* Standard Schriftschnitt*/
 	background-color: var(--white-color);
 	/* Standard Hintergrundfarbe*/
@@ -23,12 +23,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 500;
+	font-weight: 600;
 	/* Schriftschnitt für Überschriften*/
 	margin-bottom: 0.5em;
 	/* Mehr Abstand nach unten bei Überschriften */
-	color: var(--main-color);
-	/* Farbe für Überschriften */
 }
 
 /* Spezifische Größen für Überschriften – unter 768px */
@@ -87,12 +85,14 @@ button:hover {
 }
 
 a {
-	color: var(--main-color);
+	background-color: var(--sec-color);
+	color: var(--black-color);
 	/* Farbe von Links */
 }
 
 a:hover {
 	color: var(--sec-color);
+	background-color: var(--black-color);
 	/* Farbe vom Link bei Hover */
 }
 
