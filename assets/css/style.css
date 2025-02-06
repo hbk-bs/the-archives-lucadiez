@@ -86,7 +86,8 @@ h3 {
   align-items: center;
 }
 .work,
-.reflection {
+.reflection,
+.iframe {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -102,6 +103,17 @@ figure img {
   padding-top: 1.5rem;
 }
 
+/*iframe*/
+iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 710px;
+}
+.iframe-text{
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
 /*footer*/
 footer {
   background-color: white;
@@ -111,6 +123,7 @@ footer {
   text-align: center;
 }
 
+/*Header*/
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -135,7 +148,6 @@ footer {
     display: flex;
   }
 }
-
 @media (min-width: 769px) {
   .logo img {
     height: 45px;
@@ -161,5 +173,14 @@ footer {
   }
   .reflection {
     max-width: 800px;
+  }
+
+  /*iframe*/
+  .iframe {
+    max-width: 800px;
+  }
+  iframe {
+    max-width: 800px;
+    height: 1150px;
   }
 }
