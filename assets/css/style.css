@@ -27,7 +27,7 @@
   font-size: 1em;
   background: white;
 }
-.nav a:hover{
+.nav a:hover {
   color: var(--main-color);
 }
 .burger {
@@ -36,7 +36,7 @@
   cursor: pointer;
   border-radius: 3px;
 }
-.burger:hover{
+.burger:hover {
   background: var(--main-color);
 }
 .burger div {
@@ -48,8 +48,12 @@
 #menu-toggle {
   display: none;
 }
-h1{
-  padding: 40px 0 20px 0;
+h1 {
+  padding: 40px 0 0px 0;
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -60,11 +64,12 @@ h1{
   justify-content: center;
   align-items: center;
 }
-.work {
+.work,
+.reflection {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 1rem;;
+  margin: 1rem;
   border: 1px solid var(--black-color);
   border-radius: 8px;
   max-width: 400px;
@@ -77,46 +82,57 @@ figure img {
 }
 
 /*footer*/
-.footer{
+.footer {
   margin: 50px 10px 50px 10px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .nav {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 65px;
-      left: 0;
-      width: 100%;
-      text-align: center;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
   .nav a {
-      padding: 10px;
-      display: block;
+    padding: 10px;
+    display: block;
   }
-  .nav a:hover{
+  .nav a:hover {
     background-color: var(--black-color);
   }
   .burger {
-      display: flex;
+    display: flex;
   }
   #menu-toggle:checked ~ .nav {
-      display: flex;
+    display: flex;
   }
 }
 
 @media (min-width: 769px) {
-  .nav a{
+  .nav a {
     padding: 0px 5px 0px 5px;
   }
 
   /*Unteseiten*/
   .work {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 800px; /* Anpassen der Breite für bessere Darstellung */
+    max-width: 800px;
+    justify-items: center;
+  }
+  .work h3 {
+    grid-column: span 2;
+    text-align: center;
+  }
+  .work {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reflection {
+    max-width: 800px;
   }
 }
