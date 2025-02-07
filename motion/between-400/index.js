@@ -3,11 +3,11 @@ let y;
 let radius = 20;
 let xSpeed;
 let ySpeed;
-let line1 = 90;
-let line2 = 270;
+let line1 = 100;
+let line2 = 300;
 
 function setup(){
-  const canvas = createCanvas (360, 360) ;
+  const canvas = createCanvas (400, 400) ;
   canvas.parent ("sketch");
   xSpeed = random (-5, 5);
   ySpeed = random (-5, 5);
@@ -19,8 +19,8 @@ function draw() {
   background (0);
   stroke("white");
   strokeWeight(5);
-  line (line1, 0, line1, 360);
-  line (line2, 0, line2, 360);
+  line (line1, 0, line1, 400);
+  line (line2, 0, line2, 400);
 
   circle(x, y, radius);
 

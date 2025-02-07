@@ -102,16 +102,29 @@ figure img {
   padding-bottom: 0.5rem;
   padding-top: 1.5rem;
 }
+.motion-text{
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
 
 /*iframe*/
-iframe {
+.iframe-pomodoro {
   width: 100%;
   max-width: 400px;
   height: 710px;
 }
+.iframe-motion{
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
 .iframe-text{
   padding-bottom: 1rem;
   padding-top: 0.5rem;
+}
+#between-400{
+  display: none;
 }
 
 /*footer*/
@@ -179,8 +192,17 @@ footer {
   .iframe {
     max-width: 800px;
   }
-  iframe {
+  .iframe-pomodoro {
     max-width: 800px;
     height: 1150px;
+  }
+  #between{
+    display: none;
+  }
+  #between-400{
+    display: block;
+  }
+ #into{
+    width: 372px;
   }
 }
