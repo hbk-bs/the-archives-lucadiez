@@ -96,34 +96,41 @@ h3 {
   border-radius: 5px;
   max-width: 400px;
 }
+.einleitung{
+  text-align: center;
+  font-style: italic;
+}
 figure img {
   width: 100%;
   display: block;
   padding-bottom: 0.5rem;
   padding-top: 1.5rem;
 }
-.motion-text{
+.motion-text {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
-
+.physical-computing-img{
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
 /*iframe*/
 .iframe-pomodoro {
   width: 100%;
   max-width: 400px;
   height: 710px;
 }
-.iframe-motion{
+.iframe-motion {
   width: 100%;
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
-.iframe-text{
+.iframe-text {
   padding-bottom: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
-#between-400{
+#between-400 {
   display: none;
 }
 
@@ -181,6 +188,10 @@ footer {
     grid-column: span 2;
     text-align: center;
   }
+  .einleitung{
+    grid-column: span 2;
+    text-align: center;
+  }
   .work {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -196,13 +207,13 @@ footer {
     max-width: 800px;
     height: 1150px;
   }
-  #between{
+  #between {
     display: none;
   }
-  #between-400{
+  #between-400 {
     display: block;
   }
- #into{
+  #into {
     width: 372px;
   }
 }

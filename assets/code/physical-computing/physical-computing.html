@@ -1,0 +1,82 @@
+<code>#include FastLED.h <br>
+  <br>
+  #define LED_PIN 3 <br>
+  #define NUM_LEDS 30 <br>
+  #define BRIGHTNESS 255 <br>
+  #define LED_TYPE WS2811 <br>
+  #define COLOR_ORDER RGB <br>
+  CRGB leds[NUM_LEDS]; <br>
+  <br>
+  #define OUT_PIN_1 2 <br>
+  #define OUT_PIN_2 4 <br>
+  #define OUT_PIN_3 7 <br>
+  <br>
+  uint8_t output_value_1 = 0; <br>
+  uint8_t output_value_2 = 0; <br>
+  uint8_t output_value_3 = 0; <br>
+  <br>
+  void setup() { <br>
+    FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip); <br>
+    FastLED.setBrightness(BRIGHTNESS); <br>
+  <br>
+    pinMode(OUT_PIN_1, INPUT); <br>
+    pinMode(OUT_PIN_2, INPUT); <br>
+    pinMode(OUT_PIN_3, INPUT); <br>
+  } <br>
+  <br>
+  void loop() { <br>
+    // Sensor 1 <br>
+    output_value_1 = digitalRead(OUT_PIN_1); <br>
+    if (output_value_1) { <br>
+      mySubsection1(CRGB(255, 0, 0)); // Set subsection to red <br>
+    } else { <br>
+      mySubsection1(CRGB(0, 0, 0)); // Turn off subsection <br>
+    } <br>
+  <br>
+    // Sensor 2 <br>
+    output_value_2 = digitalRead(OUT_PIN_2); <br>
+    if (output_value_2) { <br>
+      mySubsection2(CRGB(255, 0, 0)); // Set subsection to red <br>
+    } else { <br>
+      mySubsection2(CRGB(0, 0, 0)); // Turn off subsection <br>
+    } <br>
+  <br>
+    // Sensor 3 <br>
+    output_value_3 = digitalRead(OUT_PIN_3); <br>
+    if (output_value_3) { <br>
+      mySubsection3(CRGB(255, 0, 0)); // Set subsection to red <br>
+    } else { <br>
+      mySubsection3(CRGB(0, 0, 0)); // Turn off subsection <br>
+    } <br>
+  <br>
+    FastLED.show(); <br>
+  } <br>
+  <br>
+  // Functions to control LED subsections <br>
+  void mySubsection1(CRGB color) { <br>
+    leds[0] = color; <br>
+    leds[1] = color; <br>
+    leds[2] = color; <br>
+    leds[3] = color; <br>
+    leds[4] = color; <br>
+    leds[5] = color; <br>
+  } <br>
+  <br>
+  void mySubsection2(CRGB color) { <br>
+    leds[6] = color; <br>
+    leds[7] = color; <br>
+    leds[8] = color; <br>
+    leds[9] = color; <br>
+    leds[10] = color; <br>
+    leds[11] = color; <br>
+  } <br>
+  <br>
+  void mySubsection3(CRGB color) { <br>
+    leds[12] = color; <br>
+    leds[13] = color; <br>
+    leds[14] = color; <br>
+    leds[15] = color; <br>
+    leds[16] = color; <br>
+    leds[17] = color; <br>
+  } <br>
+  </code>
