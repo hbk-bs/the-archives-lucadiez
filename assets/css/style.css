@@ -35,14 +35,14 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .burger:hover {
   background: var(--main-color);
 }
 .burger div {
   width: 25px;
-  height: 3px;
+  height: 1px;
   background: var(--black-color);
   margin: 5px;
 }
@@ -63,7 +63,7 @@ h3 {
 /*Jumper unten rechts*/
 .jumper {
   position: fixed;
-  bottom: 20px;
+  bottom: 45px;
   right: 20px;
   background-color: var(--sec-color);
   color: var(--black-color);
@@ -79,6 +79,9 @@ h3 {
 }
 
 /* Hauptseite */
+main {
+  flex: 1;
+}
 .overview {
   display: flex;
   flex-direction: column;
@@ -145,7 +148,7 @@ footer {
 }
 
 /*Header*/
-@media (max-width: 768px) {
+@media (max-width: 929px) {
   .nav {
     display: none;
     flex-direction: column;

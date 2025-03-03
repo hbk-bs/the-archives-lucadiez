@@ -6,6 +6,10 @@
 	--white-color: #efefef;
 }
 
+html, body{
+	height: 100%;
+}
+
 body {
 	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	/*Schriftwahl*/
@@ -15,6 +19,8 @@ body {
 	/* Standard Hintergrundfarbe*/
 	color: var(--black-color);
 	/* Standard Textfarbe*/
+	display: flex;
+	flex-direction: column;
 }
 
 h1,
